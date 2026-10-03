@@ -225,7 +225,7 @@ Writes part-001.parquet (Flat file)      Reads unclustered part-000.parquet
 
 ---
 
-### How to Monitor ZCube Health Metrics via SQL?
+### Q: How to Monitor ZCube Health Metrics via SQL?
 To check if Liquid Clustered tables are healthy or to see how many files are currently grouped into optimized ZCubes, you can use the `DESCRIBE DETAIL` command [1.2].
 ```sql
 DESCRIBE DETAIL catalog.schema.table;
@@ -254,7 +254,7 @@ Look at the `operationMetrics` column for the row where operation is equal to OP
 * **numAddedZCubes**: Indicates how many brand-new, optimally balanced Hilbert space-filling clusters were committed to storage.
 * **numChunksDefragmented**: Shows how many fragmented, unclustered files or under-sized historic ZCubes were targeted, consolidated, and cleared out by the incremental maintenance worker.
 
-### How to check and Enable Deletion Vector Support?
+### Q: How to check and Enable Deletion Vector Support?
 Liquid Clustering relies heavily on Deletion Vectors (DVs) to achieve high concurrency without locking tables or throwing `ConcurrentAppendException` errors. Without DVs enabled, updates to an active ZCube can still cause performance friction.
 
 #### Step 1: Check Current Table Feature Status
