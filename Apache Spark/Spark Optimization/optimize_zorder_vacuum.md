@@ -1,8 +1,6 @@
-# Spark Optimization
+# OPTIMIZE , ZORDER BY and VACUUM
 
-## OPTIMIZE , ZORDER BY and VACUUM
-
->### Q: What is OPTIMIZE and VACUUM command in Databricks, its differences and when to use which?
+## Q: What is OPTIMIZE and VACUUM command in Databricks, its differences and when to use which?
 
 The OPTIMIZE command in Databricks _merges many small files into larger, better-sized files_ to make queries run much faster. When you write data to a Delta table often, it creates many tiny files. This slows down read operations because your compute engine spends too much time opening files instead of reading data. OPTIMIZE fixes this by packing those small files together.
 
@@ -69,7 +67,7 @@ VACUUM sales_table LITE;
 
 ---
 
->### Q: How to handle multi-cluster setups for optimization job (created manually), prevent timeout or error throw in case of very large table, and configure Predictive Optimization?
+## Q: How to handle multi-cluster setups for optimization job (created manually), prevent timeout or error throw in case of very large table, and configure Predictive Optimization?
 
 #### 1. Multi-Cluster Architecture (Saving Up to 80% on Costs)
 Running maintenance on massive tables can be expensive. Do not use your primary interactive or expensive multi-node worker clusters for this. Instead, configure your Databricks Workflow to use a dedicated cluster pool with these configurations:
