@@ -12,7 +12,7 @@
     - https://www.microsoft.com/en-us/power-platform/products/power-bi/topics/data-modeling/what-is-data-modeling
 - Sigma Computing: https://help.sigmacomputing.com/docs/data-modeling-tutorial
 - Analytics Engineering: https://www.datacult.com/post/the-data-modeling-framework-every-analytics-engineer-should-know
-- https://www.getdbt.com/blog/data-modeling-techniques
-- https://aws.amazon.com/what-is/data-modeling/
+- DBT: https://www.getdbt.com/blog/data-modeling-techniques
+- AWS - what is data modeling: https://aws.amazon.com/what-is/data-modeling/
 - MongoDB: https://www.mongodb.com/docs/manual/data-modeling/
 - Azure Cosmos DB: https://learn.microsoft.com/en-us/azure/cosmos-db/modeling-data
